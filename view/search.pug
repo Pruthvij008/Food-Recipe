@@ -1,0 +1,57 @@
+extends base
+
+block content
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='generator' content='Mobirise v5.9.13, mobirise.com')
+    meta(name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1')
+    link(rel='shortcut icon' href='assets/images/logo5.png' type='image/x-icon')
+    meta(name='description' content='')
+    title recipe
+    link(rel='stylesheet' href='assets/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet' href='assets/bootstrap/css/bootstrap-grid.min.css')
+    link(rel='stylesheet' href='assets/bootstrap/css/bootstrap-reboot.min.css')
+    link(rel='stylesheet' href='assets/animatecss/animate.css')
+    link(rel='stylesheet' href='assets/theme/css/style.css')
+    link(rel='preload' href='https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap' as='style' onload="this.onload=null;this.rel='stylesheet'")
+    noscript
+        link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap')
+    link(rel='preload' as='style' href='assets/mobirise/css/mbr-additional.css?v=HYlUwQ')
+    link(rel='stylesheet' href='assets/mobirise/css/mbr-additional.css?v=HYlUwQ' type='text/css')
+    section#header08-2l.header8.cid-u6JoRbLJMX(data-bs-version='5.1', style="margin-top: 50px;")
+        .container
+            .row.content-wrapper.justify-content-center
+                .col-lg-7.mbr-form
+                    .text-wrapper.align-left(data-form-type='formoid')
+                        .dragArea.row
+                            .col-lg-12.col-md-12.col-sm-12
+                                h1.mbr-section-title.mbr-fonts-style.mb-4.display-1
+                                    strong Explore Delicious Recipes
+                            .col-lg-12.col-md-12.col-sm-12
+                                p.mbr-text.mbr-fonts-style.mb-4.display-7
+                                    | Welcome to our collection of mouthwatering recipes! Whether you're a seasoned chef or just starting out in the kitchen, you'll    find something delicious to try. From comforting classics to innovative creations, there's a recipe for every taste bud.
+                            .col-lg-6.col-md-6.col-sm-12
+                                input#search.form-control.display-7(type="text" name="search" placeholder="Search for recipes...")
+                            .col-auto.mbr-section-btn
+                                button#searchButton.w-100.btn.btn-black.display-7 Submit
+                            .row
+                                .alert.alert-success.col-12(hidden='hidden' data-form-alert='') Thanks for filling out the form!
+                                .alert.alert-danger.col-12(hidden='hidden' data-form-alert-danger='')
+                                    | Oops...! some problem!
+                            script.
+                                document.getElementById("searchButton").addEventListener("click", function() {
+                                    var query = document.getElementById("search").value;
+                                    if (query.trim() !== "") {
+                                        window.location.href = "/recipes/" + encodeURIComponent(query);
+                                    }
+                                });
+                .col-lg-5.col-12
+                    .image-wrapper
+                        img.w-100(src='assets/images/mbr-1036x1554.jpg')
+    section.display-7(style='padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;')
+    script(src='assets/bootstrap/js/bootstrap.bundle.min.js')
+    script(src='assets/smoothscroll/smooth-scroll.js')
+    script(src='assets/ytplayer/index.js')
+    script(src='assets/theme/js/script.js')
+    script(src='assets/formoid/formoid.min.js')
+    input(name='animation' type='hidden')
